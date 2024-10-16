@@ -96,7 +96,7 @@ option(GTIRB_RUN_CLANG_TIDY "Enable running of clang-tidy." ON)
 option(GTIRB_CXX_API "Whether or not the C++ API is built." ON)
 option(GTIRB_PY_API "Whether or not the Python API is built." ON)
 option(GTIRB_CL_API "Whether or not the Common Lisp API is built." ON)
-option(GTIRB_JAVA_API "Whether or not the Java API is built." ON)
+option(GTIRB_JAVA_API "Whether or not the Java API is built." OFF)
 
 # Determine whether or not to strip debug symbols and set the build-id. This is
 # only really needed when we are building ubuntu *-dbg packages
@@ -207,7 +207,7 @@ If this is in error, try setting the environment variable $JAVA_HOME."
 endif()
 
 # Documentation options.
-option(GTIRB_DOCUMENTATION "Whether or not documentation is built." ON)
+option(GTIRB_DOCUMENTATION "Whether or not documentation is built." OFF)
 
 # ---------------------------------------------------------------------------
 # Global settings
